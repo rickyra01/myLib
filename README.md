@@ -11,19 +11,19 @@ Personal library of useful functions for financial analysis.
 ## Installing
 
 ```bash
-pip install git+https://github.com/tuonome/fin_lib.git
+pip install git+https://github.com/rickyra01/myLib.git
 ```
 
 If currently working on fin_lib and a project in parallel:
 
 ```bash
-pip install -e /percorso/locale/fin_lib
+pip install -e /local/path/myLib
 ```
 
 ## How to use
 
 ```python
-from fin_lib import function_name
+from myLib import function_name
 
 result = function_name(...)
 ```
