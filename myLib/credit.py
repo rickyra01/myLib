@@ -77,7 +77,7 @@ def calibrate_hazard_curve(maturities, spreads, discount_factors, recovery_rate 
             )
         except ValueError as e:
             raise RuntimeError(
-                f"Root finding failed at maturity {t}."
+                f"Root finding failed at maturity {t}. "
                 "Check spreads / discount factors / initial curve."
             )
         

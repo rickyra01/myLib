@@ -46,7 +46,7 @@ def bootstrap_df(swap_rates, maturities, period = 1):
 
     if maturities[0] <= 1:
         short_maturities = np.asarray([t for t in maturities if t <= 1])
-        short_rates = swap_rates[1 : len(short_maturities) + 1]
+        short_rates = swap_rates[:len(short_maturities)]
         df.extend(short_df(short_rates, short_maturities))
         update = maturities > 1
         maturities = maturities[update]
