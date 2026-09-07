@@ -74,7 +74,7 @@ class NSS():
                 )
         
                 if p0 is None:
-                        p0 = [yields[-1], yields[0] - yields[-1], 0.0, 0.0, 1.0, 5.0]
+                        p0 = [self.observed_yields[-1], self.observed_yields[0] - self.observed_yields[-1], 0.0, 0.0, 1.0, 5.0]
         
                 self.params, self.cov_matrix = curve_fit(
                         self._model,

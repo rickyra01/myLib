@@ -1,6 +1,6 @@
-from .df_bootstrapping import short_df, bootstrap_df
-from .df_interpolation import interpolate, generate_subperiods
-from .nss_calibration import NSS
+from .bootstrapping import short_df, bootstrap_df
+from .interpolation import interpolate, generate_subperiods
+from .curves import NSS
 from .credit import survival_probs, calibrate_hazard_curve
 
 __all__ = [
